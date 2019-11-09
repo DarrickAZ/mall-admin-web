@@ -301,6 +301,27 @@ export const constantRouterMap = [
       }
     ]
   },
+  {
+    path:'/monitor',
+    component: Layout,
+    redirect: '/monitor/index',
+    name: 'monitor',
+    meta: {title: '服务监控', icon: 'tree'},
+    children: [
+      {
+        path: 'eureka',
+        name: 'homeEureka',
+        component: () => import('@/views/monitor/index'),
+        meta: {title: 'eureka', icon: 'product-attr'}
+      },
+      {
+        path: 'new',
+        name: 'homeNew',
+        component: () => import('@/views/sms/new/index'),
+        meta: {title: 'swagger', icon: 'product-add'}
+      }
+    ]
+  },
   {path: '*', redirect: '/404', hidden: true}
 ]
 
