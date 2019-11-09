@@ -1,7 +1,7 @@
 
 <template>
   <div style="height:auto;">
-    <iframe style="width:100%;height:100%;" :src="bdTokenUrl" frameborder="0" scrolling="no" id="bdIframe">
+    <iframe style="width:100%;height:100%;" :src="bdTokenUrl" frameborder="0" scrolling="yes" id="bdIframe">
     </iframe>
   </div>
 </template>
